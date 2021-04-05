@@ -19,6 +19,7 @@ jobs:
       - name: 🚀 publish
         run: |
           npm i -g vsce
+          yarn
           vsce package
           vsce publish minor -p $AZURE_TOKEN
         env:
